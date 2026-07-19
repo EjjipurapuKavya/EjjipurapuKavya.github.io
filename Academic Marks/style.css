@@ -1,0 +1,269 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#74ebd5,#ACB6E5);
+    min-height:100vh;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:linear-gradient(90deg,#0f172a,#2563eb);
+    padding:10px 0;
+}
+
+.navbar-brand{
+    font-weight:bold;
+    font-size:25px;
+    display:flex;
+    align-items:center;
+}
+
+/* Logo */
+
+.logo{
+    margin-left:15px;
+}
+
+.logo-img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid white;
+    transition:0.4s;
+}
+
+.logo-img:hover{
+    transform:scale(1.1) rotate(5deg);
+}
+
+/* Banner */
+
+.about-banner{
+    width:120px;
+    height:45px;
+    object-fit:cover;
+    border-radius:8px;
+    margin-left:20px;
+    border:2px solid white;
+    transition:0.4s;
+}
+
+.about-banner:hover{
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(255,255,255,.5);
+}
+
+.nav-link{
+    color:white !important;
+    margin:0 8px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffd54f !important;
+}
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 30px rgba(0,0,0,.25);
+    animation:slideUp 1s ease;
+    transition:.4s;
+}
+
+.profile-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 35px rgba(0,0,0,.3);
+}
+
+/* Profile Image */
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:25px auto;
+    display:block;
+    border:5px solid #2563eb;
+    animation:float 3s infinite ease-in-out;
+}
+
+/* ================= BUTTON ================= */
+
+.btn-custom{
+    background:#2563eb;
+    color:white;
+    border-radius:30px;
+    padding:10px 25px;
+    transition:.4s;
+}
+
+.btn-custom:hover{
+    background:#1d4ed8;
+    color:white;
+    transform:scale(1.08);
+}
+
+/* ================= TABLE ================= */
+
+.table{
+    animation:fadeIn 1.5s;
+}
+
+.table thead{
+    background:#2563eb;
+    color:white;
+}
+
+.table tbody tr:hover{
+    background:#dbeafe;
+    transition:.3s;
+}
+
+/* ================= INFO CARD ================= */
+
+.info-card{
+    border:none;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.4s;
+}
+
+.info-card:hover{
+    transform:translateY(-8px);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    text-align:center;
+    margin-top:50px;
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-12px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+@keyframes slideUp{
+
+from{
+opacity:0;
+transform:translateY(80px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.profile-img{
+    width:140px;
+    height:140px;
+}
+
+.logo-img{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.about-banner{
+    width:170px;
+    height:55px;
+    object-fit:contain;
+    background:white;
+    padding:5px;
+    border-radius:8px;
+    margin-left:20px;
+}
+
+/* Navbar */
+
+.navbar{
+    background:linear-gradient(90deg,#2563eb,#3b82f6);
+    padding:8px 20px;
+}
+
+/* Logo */
+
+.logo-img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Banner */
+
+.banner-img{
+    width:570px;
+    height:45px;
+    object-fit:contain;
+    margin-left:20px;
+}
+
+/* Menu */
+
+.navbar-nav .nav-link{
+    color:#fff !important;
+    font-size:18px;
+    font-weight:600;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.navbar-nav .nav-link:hover{
+    color:#ffd54f !important;
+    transform:translateY(-2px);
+}
